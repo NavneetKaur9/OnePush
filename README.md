@@ -1,7 +1,7 @@
 # OnePush
 Hacker Earth Toppr Frontend challenge
 
-### Running [Demo](https://github.com/angular/material)
+### Running [Demo]()
 
 ```bash
 # enter project directory

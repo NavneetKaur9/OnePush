@@ -1,0 +1,23 @@
+{
+  "name": "onepush",
+  "version": "1.0.0",
+  "description": "Hacker Earth Toppr Frontend challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavneetKaur9/OnePush.git"
+  },
+  "author": "Navneet Pannu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NavneetKaur9/OnePush/issues"
+  },
+  "homepage": "https://github.com/NavneetKaur9/OnePush#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
