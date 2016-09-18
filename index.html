@@ -36,8 +36,6 @@
       <!-- left section -->
       <div class="col m7 offset-m1 s12" style=" border-right: thick double #868686;">
         <div class="input-field col s12">
-          <!-- <i class="material-icons prefix">search</i>
- -->
           <input type="text" id="autocomplete-input" class="autocomplete" ng-model="searchText">
           <label for="autocomplete-input">Search (via name,tag or link)</label>
         </div>
@@ -51,19 +49,21 @@
                 <p>
                   <h5 class="green-text req-lighten-2">{{value.title}}</h5>
                 </p>
-                <div class="col m1 s1 ">
-                  <img src="img/tag.png">
-                </div>
-                <div class="col m2 s2">
-                  {{value.tag}}
-                </div>
-                <div class="col m1 s1">
-                  <a href={{value.url_address}} target="_blank" class="hoverable"><img src="img/link.png"></a>
-                </div>
-                <div class="col m5 s6">
-                  <a href={{value.url_address}} target="_blank">
+                <div class="row" style="margin-bottom:0px">
+                  <div class="col m1 s2 ">
+                    <img src="img/tag.png">
+                  </div>
+                  <div class="col m4 s10">
+                    {{value.tag}}
+                  </div>
+                  <div class="col m1 s12" style=" border-left:3px solid #716B70">
+                    <a href={{value.url_address}} target="_blank" class="hoverable"><img src="img/link.png"></a>
+                  </div>
+                  <div class="col m6 s12">
+                    <a href={{value.url_address}} target="_blank">
                   {{value.url_address}}
                   </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@
               <div class="row">
                 <div class="input-field col m12 s12 ">
                   <input placeholder="Placeholder" type="text" class="validate" ng-model="title">
-                  <label for="first_name">title</label>
+                  <label for="first_name">Title</label>
                 </div>
                 <div class="input-field col m12 s12 ">
                   <input value="I am not editable" type="text" class="validate" ng-model="url">
@@ -94,7 +94,7 @@
                 </div>
                 <div class="input-field col m6 s6 ">
                   <input type="text" class="validate" ng-model="tag">
-                  <label for="tag">tag</label>
+                  <label for="tag">Tag</label>
                 </div>
                 <div class="input-field col m6 s6 ">
                   <a class="waves-effect waves-light btn" ng-click="submit()">Submit</a>
