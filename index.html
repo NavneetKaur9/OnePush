@@ -1,0 +1,110 @@
+<!doctype html>
+<html ng-app="onePush">
+
+<head>
+  <title>One Push</title>
+  <link rel="shortcut icon" href="img/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href=styles/style.min.css>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"> -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/mainController.js"></script>
+</head>
+
+<body>
+  <div ng-controller="mainController ">
+    <header class="no-padding">
+      <div class="navbar-fixed">
+        <nav class="navfeature">
+          <div class="container nav-wrapper">
+            <span class="hide-on-small-only"><img src="img/logo.png" id="appicon" style="vertical-align: middle;margin-bottom:10px;margin-right:10px;" width="50"></span>
+            <span id="header-large" style="font-weight:300;font-size:1.3rem;">One Push- Finding the best online website!</span>
+            <ul id="nav-mobile" class="hide-on-med-and-down right">
+              <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-24">We've found <b>{{websites.length}}</b> personal web portfolio. </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header ends -->
+    <div class="row" style="background-image: url(img/bg_form.png);">
+      <!-- left section -->
+      <div class="col m7 offset-m1 s12" style=" border-right: thick double #868686;">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">search</i>
+          <input type="text" id="autocomplete-input" class="autocomplete" ng-model="searchText">
+          <label for="autocomplete-input">Search (via name,tag or link)</label>
+        </div>
+        <div ng-repeat="(key, value) in websites | filter:searchText">
+          <div class="card horizontal hoverable">
+            <div class="card-image" style="height:100px; width:100px">
+              <img src={{value.favicon_image}}>
+            </div>
+            <div class="card-stacked ">
+              <div class="card-content">
+                <p>
+                  <h5 class="green-text req-lighten-2">{{value.title}}</h5>
+                </p>
+                <div class="col m1 s1 ">
+                  <img src="img/tag.png">
+                </div>
+                <div class="col m2 s2">
+                  {{value.tag}}
+                </div>
+                <div class="col m1 s1">
+                  <a href={{value.url_address}} target="_blank" class="hoverable"><img src="img/link.png"></a>
+                </div>
+                <div class="col m5 s6">
+                  <a href={{value.url_address}} target="_blank">
+                  {{value.url_address}}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="waves-effect waves-light btn grey col m6 offset-m3" ng-click="loadPortfolios()">
+          <span ng-hide="showLoader">Load More Portfolios</span>
+          <span ng-show="showLoader">loading.................</span>
+        </a>
+      </div>
+      <!-- right section -->
+      <div class="col m4 s12">
+        <div class="card-panel " style="background-image: url(img/bgForm.png);">
+          <span class="teal-text text-darken-2">
+          <h4>Contribute/Add website</h4>
+          <span class="red-text text-darken-1">{{message}}</span>
+          </span>
+          <div class="row">
+            <form>
+              <div class="row">
+                <div class="input-field col m12 s12 ">
+                  <input placeholder="Placeholder" type="text" class="validate" ng-model="title">
+                  <label for="first_name">title</label>
+                </div>
+                <div class="input-field col m12 s12 ">
+                  <input value="I am not editable" type="text" class="validate" ng-model="url">
+                  <label for="url">Web/url Address</label>
+                </div>
+                <div class="input-field col m6 s6 ">
+                  <input type="text" class="validate" ng-model="tag">
+                  <label for="tag">tag</label>
+                </div>
+                <div class="input-field col m6 s6 ">
+                  <a class="waves-effect waves-light btn" ng-click="submit()">Submit</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
