@@ -1,7 +1,7 @@
 # OnePush
 Hacker Earth Toppr Frontend challenge
 
-### Running [Demo]()
+### Running [Demo](https://one-push-1992.herokuapp.com/)
 
 ```bash
 # enter project directory
