@@ -1,111 +1,486 @@
-<!doctype html>
-<html ng-app="onePush">
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<!-- Mirrored from themepro.top/finance/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Apr 2017 13:42:24 GMT -->
 
 <head>
-  <title>One Push</title>
-  <link rel="shortcut icon" href="img/icon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href=styles/style.min.css>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"> -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/mainController.js"></script>
+  <title>Trading Tycoons</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/css6adf.css?family=Roboto:100,300,400,500,700,900,300italic">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="keywords" content="business, financial">
+  <meta name="description" content="This is some kind of awesome description about the best page in the world">
+  <link rel="icon" href="images/1favicon.jpg" type="image/jpg">
 </head>
 
 <body>
-  <div ng-controller="mainController ">
-    <header class="no-padding">
-      <div class="navbar-fixed">
-        <nav class="navfeature">
-          <div class="container nav-wrapper">
-            <span class="hide-on-small-only"><img src="img/logo.png" id="appicon" style="vertical-align: middle;margin-bottom:10px;margin-right:10px;" width="50"></span>
-            <span id="header-large" style="font-weight:300;font-size:1.3rem;">One Push- Finding the best online website!</span>
-            <ul id="nav-mobile" class="hide-on-med-and-down right">
-              <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-24">We've found <b>{{websites.length}}</b> personal web portfolio. </li>
+  <div class="page">
+    <header class="rd-navbar-wrap">
+      <nav data-layout="rd-navbar-fixed" data-focus-on-hover="false" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-md-stick-up-offset="157px" data-lg-stick-up-offset="157px" class="rd-navbar rd-navbar-default">
+        <div class="rd-navbar-inner">
+          <div class="rd-navbar-panel">
+            <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"> <span></span> </button>
+            <div class="brand rd-navbar-brand">
+              <a href="index.html">
+                <!-- <img class="img-responsive" src="images/logo-light-158x37.png" alt="" width="" height=""> -->
+                <img class="img-responsive" src="images/logo2.jpg" alt="" width="" height="">
+              </a>
+            </div>
+            <div class="rd-navbar-aside">
+              <ul class="inline-list group">
+                <!--  <li>
+                  <div class="unit unit-horizontal unit-middle unit-spacing-sm">
+                    <div class="unit-left"> <img src="images/icon-clock-32x33.png" alt="" width="33" height="32"> </div>
+                    <div class="unit-body"> <span class="text-bold text-gray-base reveal-block">Mon - Sat: 9:00 - 18:00</span> <span>Sunday CLOSED</span> </div>
+                  </div>
+                </li> -->
+                <!-- <li>
+                  <div class="unit unit-horizontal unit-middle unit-spacing-sm">
+                    <div class="unit-left"> <img src="images/icon-location-32x33.png" alt="" width="33" height="33"> </div>
+                    <div class="unit-body">
+                      <address class="contact-info">
+                        <span class="text-bold text-gray-base reveal-block"> 1010 Avenue</span> <span>New York, NY 10018</span>
+                      </address>
+                    </div>
+                  </div>
+                </li> -->
+                <li>
+                  <div class="unit unit-horizontal unit-middle unit-spacing-sm">
+                    <div class="unit-left">
+                      <span class="icon icon-md fa-phone text-picton-blue"></span>
+                    </div>
+                    <div class="unit-body"> <a class="text-gray-base text-bold reveal-block" href="callto:#">819-884-1000</a> <a href=""><span class="__cf_email__" data-cfemail="">philip@gmail.com</span></a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="header_socials unit unit-horizontal "> <a target="_blank" href="https://www.facebook.com/Earningbylearningonline/"><i class="fa fa-facebook"></i></a> <a target="_blank" href="#"><i class="fa fa-twitter"></i></a> <a target="_blank" href="#"><i class="fa fa-instagram"></i></a> </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rd-navbar-nav-wrap">
+            <ul class="rd-navbar-nav">
+              <li class="active">
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="index.html#why-us">Why us?</a>
+              </li>
+              <li>
+                <a href="our-courses.html">Courses</a>
+              </li>
+              <li>
+                <a href="faqs.html">FAQs</a>
+              </li>
+              <li>
+                <a href="index.html#contact">Contact us</a>
+              </li>
             </ul>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- header ends -->
-    <div class="row" style="background-image: url(img/bg_form.png);">
-      <!-- left section -->
-      <div class="col m7 offset-m1 s12" style=" border-right: thick double #868686;">
-        <div class="input-field col s12">
-          <input type="text" id="autocomplete-input" class="autocomplete" ng-model="searchText">
-          <label for="autocomplete-input">Search (via name,tag or link)</label>
         </div>
-        <div ng-repeat="(key, value) in websites | filter:searchText">
-          <div class="card horizontal hoverable">
-            <div class="card-image" style="height:100px; width:100px">
-              <img src={{value.favicon_image}}>
-            </div>
-            <div class="card-stacked ">
-              <div class="card-content">
-                <p>
-                  <h5 class="green-text req-lighten-2">{{value.title}}</h5>
-                </p>
-                <div class="row" style="margin-bottom:0px">
-                  <div class="col m1 s2 ">
-                    <img src="img/tag.png">
-                  </div>
-                  <div class="col m4 s10">
-                    {{value.tag}}
-                  </div>
-                  <div class="col m1 s12" style=" border-left:3px solid #716B70">
-                    <a href={{value.url_address}} target="_blank" class="hoverable"><img src="img/link.png"></a>
-                  </div>
-                  <div class="col m6 s12">
-                    <a href={{value.url_address}} target="_blank">
-                  {{value.url_address}}
-                  </a>
-                  </div>
-                </div>
+      </nav>
+    </header>
+    <section data-min-height="500px" data-height="29.84%" class="swiper-container swiper-slider" data-autoplay="false" data-keyboard="true">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-dark" data-slide-bg="images/bg-02-1920x1200.jpg">
+          <div class="swiper-slide-caption">
+            <section class="section-70">
+              <div class="shell text-center text-md-left">
+                <h1 class="swiper-slide-title">Welcome to Trading Tycoons</h1>
+                <div class="group group-md">
+                  <a class="button button-sm button-primary-filled veil reveal-sm-inline-block" href="">Enroll Now</a>
+                  <a class="button button-sm button-default" href="our-courses.html">Our Courses</a> </div>
               </div>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-slide bg-dark" data-slide-bg="images/home-slide-2.jpg">
+          <div class="swiper-slide-caption">
+            <section class="section-70">
+              <div class="shell text-center text-md-left">
+                <h1 class="swiper-slide-title">Trade like a pro </h1>
+                <h4 class="swiper-slide-subtitle veil reveal-sm-block"> Learn the strategies which are used by Institutionals traders.<br class="veil reveal-sm-block">
+                Learn proven wealth creation system. </h4>
+                <div class="group group-md">
+                  <a class="button button-sm button-primary-filled veil reveal-sm-inline-block" href="our-courses.html">Our Courses</a>
+                  <!-- <a class="button button-sm button-default" href="#">Purchase now</a> --></div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-slide bg-dark" data-slide-bg="images/bg-01-1920x690.jpg">
+          <div class="swiper-slide-caption">
+            <section class="section-70">
+              <div class="shell text-center text-md-left">
+                <h1 class="swiper-slide-title"> Looking for reliable share market training center? </h1>
+                <h4 class="swiper-slide-subtitle veil reveal-sm-block"> Join today to become master analyst of financial market.<br class="veil reveal-sm-block"> </h4>
+                <div class="group group-md"> <a class="button button-sm button-primary-filled veil reveal-sm-inline-block" href="our-courses.html">Our Courses</a>
+                  <!-- <a class="button button-sm button-default" href="#">Purchase now</a> --></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-nav">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="section section-lg bg-white">
+      <div class="shell">
+        <div class="range range-sm-center range-50">
+          <div class="cell-sm-5 cell-lg-3">
+            <div class="service text-center inset-lg-left-30 inset-lg-right-30">
+              <div class="icon-wrap"> <img src="images/icon-wallet-45x45.png" alt="" class="img-responsive" width="45" height="45"> </div>
+              <h4> <a href="our-services.html">Our Vision</a> </h4>
+              <p>Risk management is intended to manage financial and other losses associated with risks to your assets or business.</p>
+            </div>
+          </div>
+          <div class="cell-sm-5 cell-lg-3">
+            <div class="service text-center inset-lg-left-30 inset-lg-right-30">
+              <div class="icon-wrap"> <img src="images/icon-coffe-45x45.png" alt="" class="img-responsive" width="45" height="45"> </div>
+              <h4> <a href="our-services.html">Our Courses</a> </h4>
+              <p>Use our strategies and retirement advice, including retirement calculators to help you retire faster.</p>
+            </div>
+          </div>
+          <div class="cell-sm-5 cell-lg-3">
+            <div class="service text-center inset-lg-left-30 inset-lg-right-30">
+              <div class="icon-wrap"> <img src="images/icon-business-45x45.png" alt="" class="img-responsive" width="45" height="45"> </div>
+              <h4> <a href="our-services.html">Connect Trader Community</a> </h4>
+              <p>We'll help you make sensible decisions about money that can help you achieve your goals in life.</p>
+            </div>
+          </div>
+          <div class="cell-sm-5 cell-lg-3">
+            <div class="service text-center inset-lg-left-30 inset-lg-right-30">
+              <div class="icon-wrap"> <img src="images/icon-case-45x45.png" alt="" class="img-responsive" width="45" height="45"> </div>
+              <h4> <a href="our-services.html">Contact Us</a> </h4>
+              <p>Tax planning considers the tax implications of business decisions, usually with the goal of minimizing tax liability.</p>
             </div>
           </div>
         </div>
-        <a class="waves-effect waves-light btn grey col m6 offset-m3" ng-click="loadPortfolios()">
-          <span ng-hide="showLoader">Load More Portfolios</span>
-          <span ng-show="showLoader">loading.................</span>
-        </a>
       </div>
-      <!-- right section -->
-      <div class="col m4 s12">
-        <div class="card-panel " style="background-image: url(img/bgForm.png);">
-          <span class="teal-text text-darken-2">
-          <h4>Contribute/Add website</h4>
-          <span class="red-text text-darken-1">{{message}}</span>
-          </span>
-          <div class="row">
-            <form>
-              <div class="row">
-                <div class="input-field col m12 s12 ">
-                  <input placeholder="Placeholder" type="text" class="validate" ng-model="title">
-                  <label for="first_name">Title</label>
-                </div>
-                <div class="input-field col m12 s12 ">
-                  <input value="I am not editable" type="text" class="validate" ng-model="url">
-                  <label for="url">Web/url Address</label>
-                </div>
-                <div class="input-field col m6 s6 ">
-                  <input type="text" class="validate" ng-model="tag">
-                  <label for="tag">Tag</label>
-                </div>
-                <div class="input-field col m6 s6 ">
-                  <a class="waves-effect waves-light btn" ng-click="submit()">Submit</a>
+    </section>
+    <!--     <section class="section section-md bg-image bg-primary bg-fixed" style="background-image: url(images/bg-02-1920x1200.jpg)">
+      <div class="shell text-center text-lg-left">
+        <h2 class="reveal-inline-block text-middle">What We Do</h2>
+        <hr class="divider divider-vertical bg-white text-middle veil reveal-lg-inline-block">
+        <h4 class="text-light reveal-lg-inline-block text-middle inset-lg-right-60">We provide expert's advice financial advice for businesses and individuals</h4>
+        <a href="our-services.html" class="button button-sm button-primary-filled text-middle">See All Services</a> </div>
+    </section> -->
+    <div id="why-us">
+      <section class="section section-md bg-image bg-primary bg-fixed" style="background-image: url(images/bg-image-4.jpg)" data-id="why-us">
+        <div class="shell text-center">
+          <h2>Why Us ?</h2>
+          <hr class="divider bg-primary">
+          <div class="range range-50">
+            <div class="cell-sm-4 cell-lg-12">
+              <ul class="marked-list whyUs
+">
+                <li>Are you making handsome profits? If yes, we can help to improve your chances of wining trades. Was your best trade more than 20,000 or more. If yes, we may able to make more big profits for you.</li>
+                <li>Do you have small trading capital? Don't worry we will help you to make it large.</li>
+                <li>We can share our professional trading strategies with solid risk management.It is our passion to help guide and teach profitable traders.</li>
+                <li>Here at Trading Tycoons, you find out the world class trading style and ideas which are used by institutional traders.</li>
+                <li> Learn how to trade with lowest risk and highest reward with higher probability.</li>
+                <li>Learn how to find 7star, 5 star, 3 star trading setups.</li>
+                <li>Here you will learn how to make consistent income from the stock market.</li>
+                <li>Learn how to identify the trend and make a position before the trend reversal and capture the whole trend.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="range range-xs-center range-50">
+            <div class="cell-md-7 cell-lg-6">
+              <div class="tabs-custom">
+                <ul class="nav nav-tabs">
+                  <li class="active"> <a data-toggle="tab" href="#tab1">Facts</a> </li>
+                  <li> <a data-toggle="tab" href="#tab2">Advantages</a> </li>
+                  <li> <a data-toggle="tab" href="#tab3">Skills</a> </li>
+                </ul>
+                <div class="tab-content">
+                  <div id="tab1" class="tab-pane fade in active">
+                    <p class="text-left text-gray-base">Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is pefect.</p>
+                    <div class="range range-xs-center counter-wrap">
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="275" class="counter"></div>
+                        <p class="counter-desc">Cases completed</p>
+                      </div>
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="19" class="counter"></div>
+                        <p class="counter-desc">Consultants</p>
+                      </div>
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="130" class="counter"></div>
+                        <p class="counter-desc">Awards won</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab2" class="tab-pane fade">
+                    <p class="text-left text-gray-base">Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is pefect.</p>
+                    <div class="range range-xs-center counter-wrap">
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="275" class="counter text-primary"></div>
+                        <p class="text-gray-base">Cases completed</p>
+                      </div>
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="19" class="counter text-primary"></div>
+                        <p class="text-gray-base">Consultants</p>
+                      </div>
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="130" class="counter text-primary"></div>
+                        <p class="text-gray-base">Awards won</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab3" class="tab-pane fade">
+                    <p class="text-left text-gray-base">Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is pefect.</p>
+                    <div class="range range-xs-center counter-wrap">
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="275" class="counter text-primary"></div>
+                        <p class="text-gray-base">Cases completed</p>
+                      </div>
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="19" class="counter text-primary"></div>
+                        <p class="text-gray-base">Consultants</p>
+                      </div>
+                      <div class="cell-sm-4">
+                        <div data-from="0" data-to="130" class="counter text-primary"></div>
+                        <p class="text-gray-base">Awards won</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="cell-md-5 cell-lg-6 text-sm-left">
+              <div class="inset-lg-left-70 inset-lg-right-70">
+                <h4>Doing the right thing, at the right time.</h4>
+                <p>Welcome to the leading company on the market! Our success is driven by the highest quality customer service. We can meet the requirements even of the whimsical clients; there are no complex tasks for us! Thanks for your choice! Our company can boast the reputation of the trusted partner known worldwide. We are proud of the uncompromising quality of services</p>
+                <a href="about-us.html" class="button button-sm button-primary button-thin">Read More</a> </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </div>
+    <!-- <section class="section section-md bg-white">
+      <div class="section-calculator-wrap">
+        <div class="bg-athens-gray section-relative section-calculator">
+          <div class="shell">
+            <div class="range range-condensed range-xs-center">
+              <div class="cell-sm-8 cell-lg-7 section-relative">
+                <div class="calculator-wrap bg-white">
+                  <h2>Loan Calculator</h2>
+                  <hr class="divider bg-primary divider-left">
+                  <form class="form-calculator">
+                    <div class="form-group-multiple">
+                      <div class="form-group">
+                        <label for="loan-amount" class="form-label-outside">Loan Amount</label>
+                        <input id="loan-amount" class="form-input" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="residual-value" class="form-label-outside">Residual Value</label>
+                        <input id="residual-value" class="form-input" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group-multiple">
+                      <div class="form-group">
+                        <label for="interest-rate" class="form-label-outside">Interest Rate %</label>
+                        <input id="interest-rate" value="7.5" class="form-input" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="number-of-months" class="form-label-outside">Number of Months</label>
+                        <input id="number-of-months" value="7.5" class="form-input" type="text">
+                      </div>
+                    </div>
+                    <p class="small">Results based in the data entered above:</p>
+                    <div class="form-group-multiple">
+                      <div class="form-group">
+                        <label for="monthly-payment" class="form-label-outside">Monthly Payment</label>
+                        <input id="monthly-payment" class="form-input" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="interest-amount" class="form-label-outside">Interest Amount</label>
+                        <input id="interest-amount" class="form-input" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group-multiple">
+                      <div class="form-group form-calculator-total">
+                        <label for="total-payment" class="form-label-outside">Total Payment</label>
+                        <input id="total-payment" class="form-input" type="text">
+                      </div>
+                      <div class="form-group"></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="cell-lg-5 veil reveal-lg-inline-block"> <img src="images/home-2-552x654.png" alt="" style="margin-top:-100px" width="552" height="654"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="section bg-white section-md">
+      <div class="shell text-center">
+        <!-- <h2>Testimonials</h2>
+          <hr class="divider bg-primary"> -->
+        <div class="owl-wrap inset-sm-left-70 inset-sm-right-70">
+          <div data-items="1" data-sm-items="2" data-md-items="3" data-margin="29" data-dots-custom=".owl-custom-pagination" data-nav="true" data-dots="false" data-loop="true" data-dots-each="1" class="owl-carousel">
+            <div>
+              <img src="images/gallery1.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery2.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery3.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery4.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery5.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery6.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery7.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery8.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery9.jpg" alt="">
+            </div>
+            <div>
+              <img src="images/gallery10.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="owl-controls-custom veil-sm">
+          <ul class="owl-custom-pagination owl-dots">
+            <li class="owl-dot" data-owl-item="0"></li>
+            <li class="owl-dot" data-owl-item="1"></li>
+            <li class="owl-dot" data-owl-item="2"></li>
+            <li class="owl-dot" data-owl-item="3"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section section-md bg-white" id="contact">
+      <div class="shell-fluid text-center">
+        <h3>Contact Us</h3>
+        <div class="range range-xs-center range-condensed">
+          <div class="cell-xs-8 cell-sm-6 cell-lg-6">
+            <form data-form-output="form-output-global" data-form-type="contact" method="post" action="http://themepro.top/finance/bat/rd-mailform.php" class="rd-mailform rd-mailform-label-outside text-left offset-top-15" novalidate="novalidate">
+              <div class="range range-30">
+                <div class="cell-md-4-9">
+                  <div class="form-group">
+                    <label for="contact-name" class="form-label-outside">Your Name</label>
+                    <input id="contact-name" name="name" data-constraints="@Required" class="form-input form-input-impressed form-control-has-validation form-control-last-child" type="text"><span class="form-validation"></span><span class="form-validation"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label-outside">Your Email</label>
+                    <input id="contact-email" name="email" data-constraints="@Required @Email" class="form-input form-input-impressed form-control-has-validation form-control-last-child" type="email"><span class="form-validation"></span><span class="form-validation"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-phone" class="form-label-outside">Phone</label>
+                    <input id="contact-phone" name="phone" data-constraints="@Required @Numeric" class="form-input form-input-impressed form-control-has-validation form-control-last-child" type="text"><span class="form-validation"></span><span class="form-validation"></span>
+                  </div>
+                </div>
+                <div class="cell-md-5-9">
+                  <div class="form-group has-error">
+                    <label for="contact-message" class="form-label-outside">Your Message</label>
+                    <textarea id="contact-message" name="message" data-constraints="@Required" class="form-input form-input-impressed form-control-has-validation form-control-last-child" style="margin-top: 0px; margin-bottom: 0px; height: 264px;"></textarea><span class="form-validation">The text area is required.</span><span class="form-validation">The text area is required.</span>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="button button-sm button-primary-filled">Submit</button>
             </form>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <footer class="page-footer bg-ebony-clay">
+      <div class="section section-md bg-bright-gray">
+        <div class="shell text-left">
+          <div class="range range-xs-center range-50">
+            <div class="cell-sm-6 cell-lg-3 text-center text-sm-left">
+              <div class="brand">
+                <a href="index.html"> <img class="img-responsive" src="images/logo2.jpg" alt="" width="158" height="37"> </a>
+              </div>
+              <p>Welcome to the leading company delivering services that combine quality, reliability and compliance!</p>
+              <div class="group group-xl"> <span class="small text-italic">Follow Us:</span>
+                <ul class="inline-list">
+                  <li>
+                    <a href="#" class="icon icon-xxs icon-circle icon-dark icon-white-filled fa-facebook"></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon icon-xxs icon-circle icon-dark icon-white-filled fa-twitter"></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon icon-xxs icon-circle icon-dark icon-white-filled fa-google-plus"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cell-sm-6 cell-lg-3">
+              <ul class="footer-navigation">
+                <li> <a href="about-us.html">About</a> </li>
+                <li> <a href="blog.html">Blog</a> </li>
+                <li> <a href="contacts.html">Contacts</a> </li>
+                <li class="active"> <a href="typography.html">Typography</a> </li>
+                <li> <a href="careers.html">Careers</a> </li>
+                <li> <a href="our-team.html">Our team</a> </li>
+                <li> <a href="our-services.html">Services</a> </li>
+              </ul>
+            </div>
+            <div class="cell-sm-6 cell-lg-3">
+              <h4>Contact info</h4>
+              <hr class="hr bg-shuttle-gray inset-lg-right-70">
+              <address class="contact-info">
+                <ul class="list">
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-md">
+                      <div class="unit-left"> <span class="icon icon-sm fa-phone text-picton-blue"></span> </div>
+                      <div class="unit-body"> <a href="callto:+1234567890">1900-09872</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-md">
+                      <div class="unit-left"> <span class="icon icon-sm fa-envelope-o text-picton-blue" style="font-size: 20px"></span> </div>
+                      <div class="unit-body"> <a href="http://themepro.top/cdn-cgi/l/email-protection#dab3b4bcb59abebfb7b5b6b3b4b1f4b5a8bd"><span class="__cf_email__" data-cfemail="2e474048416e4a4b43414247404500415c49">philip@gmail.com</span></a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="cell-sm-6 cell-lg-3">
+              <h4>Subscribe</h4>
+              <hr class="hr bg-shuttle-gray inset-lg-right-70">
+              <p>Get the latest updates and offers.</p>
+              <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="#" class="rd-mailform rd-mailform-inline">
+                <div class="form-froup">
+                  <label for="footer-contact-email" class="form-label">E-mail</label>
+                  <input id="footer-contact-email" name="email" data-constraints="@Required @Email" class="form-input" type="email">
+                </div>
+                <button type="submit" class="button button-xs button-primary-filled">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shell text-center rights">
+        <p>©&nbsp; <span id="copyright-year">2017</span>&nbsp;Trading Tycoons.
+          <!-- <a href="privacy-policy.html">Privacy policy</a> --></p>
+      </div>
+    </footer>
   </div>
+  <div id="form-output-global" class="snackbars"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+<!-- Mirrored from themepro.top/finance/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Apr 2017 13:43:06 GMT -->
 
 </html>
